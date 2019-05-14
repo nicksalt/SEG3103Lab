@@ -1,4 +1,4 @@
-# SEG3103Lab
+# SEG3125Lab
 
 ###### Colours
 - White
