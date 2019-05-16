@@ -1,0 +1,38 @@
+.topnav {
+  background-color: white;
+  overflow: hidden;
+  border-bottom: 1px solid lightgray;
+}
+
+.topnav-logo-wrapper {
+  display: inline-block;
+}
+
+.logo {
+  float: left;
+  margin: 10px 16px 20px 16px;
+}
+
+.topnav-deliver-info {
+  float: right;
+}
+
+.topnav-deliver-info-list {
+  list-style-type: none;
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  margin: 0;
+  padding: 0;
+}
+
+.topnav-deliver-info-list li {
+  display: inline-block;
+  padding-top: 5px;
+  padding-right: 33px;
+}
+
+.topnav-deliver-info-list-item h1 {
+  font-size: 1em;
+  color: #E91431;
+}
