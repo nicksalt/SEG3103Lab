@@ -56,3 +56,9 @@
   width: 500px;
   text-align: left;
 }
+
+.checkout-card {
+  border-radius: 5px;
+  background-color: #F2F4F5;
+  padding-bottom: 25px;
+}
