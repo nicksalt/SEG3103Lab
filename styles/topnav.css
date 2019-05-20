@@ -1,38 +1,72 @@
 .topnav {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   background-color: white;
   overflow: hidden;
   border-bottom: 1px solid lightgray;
 }
 
-.topnav-logo-wrapper {
+.topnav div {
+  height: 79.44px;
   display: inline-block;
 }
 
-.logo {
+.topnav-logo-wrapper {
   float: left;
+  width: 100px;
+}
+
+.logo {
   margin: 10px 16px 20px 16px;
 }
 
 .topnav-deliver-info {
-  float: right;
+  width: 66%;
 }
 
 .topnav-deliver-info-list {
+  float: right;
   list-style-type: none;
   white-space: nowrap;
   overflow: hidden; 
   text-overflow: ellipsis;
   margin: 0;
-  padding: 0;
+  padding: 0 16px 16px 20px;
+  border-right: 1px solid lightgray;
 }
 
 .topnav-deliver-info-list li {
   display: inline-block;
   padding-top: 5px;
-  padding-right: 33px;
+  padding-right: 70px;
 }
 
 .topnav-deliver-info-list-item h1 {
   font-size: 1em;
   color: #E91431;
+}
+
+.topnav-login-wrapper {
+  display: table;
+  width: fit-content;
+}
+
+.topnav-login-content {
+  display: table-cell;
+  float: right;
+  vertical-align: middle;
+  margin-left: 150px;
+  padding-left: 5px;
+}
+
+.topnav-company-name {
+  overflow: auto;
+  border-right: 1px solid lightgray;
+}
+
+.topnav-company-name span {
+  display: inline-block;
+  font-size: 1.5em;
+  color: #E91431;
+  padding-top: 17%;
+  padding-right: 30px;
 }
