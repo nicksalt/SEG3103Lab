@@ -63,14 +63,11 @@ a:hover {
 .restaruants-list > h2{
     padding-left: 10%;
 }
-.restaurants{
-    text-align: center
-    
-}
 
 .restaurant-item{ 
     background: white;
     width: 80%;
+    margin: 0 10%;
     padding: 30px;
     margin-bottom: 10px;
 }
