@@ -5,7 +5,8 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/menu.js"></script>
     <link rel="stylesheet" href="./styles/shared-styles.css">
     <link rel="stylesheet" href="./styles/menu.css">
     <link rel="stylesheet" href="./styles/topnav.css">
@@ -61,39 +62,31 @@
         <div class="menu-items">
           <h2>Breakfast</h2>
           <ul class="list-group">
-            <li class="list-group-item">Eggs &amp; Bacon<span style="float: right;">$6.99</span></li>      
-            <li class="list-group-item">Breakfast Hash<span style="float: right;">$10.50</span></li>
+            <li class="list-group-item" data-name="Eggs &amp; Bacon" data-price="6.99">Eggs &amp; Bacon<span style="float: right;">$6.99</span></li>      
+            <li class="list-group-item" data-name="Breakfash Hash" data-price="10.50">Breakfast Hash<span style="float: right;">$10.50</span></li>
           </ul>
           <h2>Lunch</h2>
           <ul class="list-group">
-            <li class="list-group-item">Soup &amp; Salad<span style="float: right;">$8.50</span></li>      
-            <li class="list-group-item">Blackened Cod<span style="float: right;">$12.99</span></li>
+            <li class="list-group-item" data-name="Soup &amp; Salad" data-price="8.50">Soup &amp; Salad<span style="float: right;">$8.50</span></li>      
+            <li class="list-group-item" data-name="Blackened Cod" data-price="12.99">Blackened Cod<span style="float: right;">$12.99</span></li>
           </ul>
           <h2>Dinner</h2>
           <ul class="list-group">
-            <li class="list-group-item">Steak au Poivre<span style="float: right;">$23.50</span></li>      
-            <li class="list-group-item">Petit Marmite<span style="float: right;">$19.00</span></li>
+            <li class="list-group-item" data-name="Steak au Poivre" data-price="23.50">Steak au Poivre<span style="float: right;">$23.50</span></li>      
+            <li class="list-group-item" data-name="Petit Marmite" data-price="19.00">Petit Marmite<span style="float: right;">$19.00</span></li>
           </ul>
           <h2>Appetizers</h2>
           <ul class="list-group">
-            <li class="list-group-item">Zucchini Fritters<span style="float: right;">$8.50</span></li>      
-            <li class="list-group-item">Chicken Wings<span style="float: right;">$12.99</span></li>
+            <li class="list-group-item" data-name="Zucchini Fritters" data-price="8.50">Zucchini Fritters<span style="float: right;">$8.50</span></li>      
+            <li class="list-group-item" data-name="Chicken Wings" data-price="12.99">Chicken Wings<span style="float: right;">$12.99</span></li>
           </ul>
         </div>
       </div>
       <div class="col-3 cart">
           <h2>Your Cart</h2>
-          <!-- <div class="cart-item">
-            <h5 class="cart-order">2</h5>
-            <h5 class="cart-food">Eggs + Bacon</h5>
-            <h5 class="cart-price">$15.98</h5>
-          </div>
-          <div class="cart-item">
-            <h5 class="cart-order">1</h5>
-            <h5 class="cart-food">Pasta</h5>
-            <h5 class="cart-price">$11.99</h5>
-          </div> -->
-          <button class="checkout btn">Proceed to checkout</button>
+          <ul class="list-group" id="checkout-items">
+          </ul>
+          <button class="checkout btn" disabled >Proceed to checkout</button>
       </div>
     </div>
   </div>
