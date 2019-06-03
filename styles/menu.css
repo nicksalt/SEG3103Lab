@@ -57,13 +57,7 @@ body {
     margin:0;
     padding-left:25px;
 }
-#input_img {
-    position:absolute;
-    bottom:-2px;
-    left:0px;
-    width:25px;
-    height:25px;
-}
+
 #menu-categories{
     margin-top: 50px;
     list-style-type: none;
