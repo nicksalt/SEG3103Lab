@@ -15,46 +15,47 @@
     <div>
       <div class="welcome-main-company-name">Get <span style="color: #E91431;">Forked</span></div>
     </div>
-    <div style="margin-top: 65px; float: left">
-      <h1>Stop waiting and start eating!</h1>
-      <h3 style="color: gray;">Fill in your details below to find restaurants near you</h3>
-      <div class="welcome-form">
-        <form class="welcome-form" action="welcome-form-handler" method="post">
-          <div>
-            <label for="city">City: </label>
-            <select id="city" name="city" required="true">
-              <option value=""></option>
-              <option value="ottawa">Ottawa</option>
-              <option value="montreal">Montreal</option>
-              <option value="toronto">Toronto</option>
-              <option value="waterloo">Waterloo</option>
-            </select>
-          </div>
-          <div>
-            <label for="food-type">I'm hungry for: </label>
-            <select id="food-type" name="food-type" required="true">
-              <option value=""></option>
-              <option value="breakfast">Breakfast</option>
-              <option value="lunch">Lunch</option>
-              <option value="dinner">Dinner</option>
-              <option value="dessert">Sweets</option>
-            </select>
-          </div>
-          <div>
-            <label for="restaurant-search">Restaurant search: </label>
-            <input id="restaurant-search" type="search" placeholder="Restaurant filter..." />
-          </div>
-          <div class="button">
-            <button type="submit">Find restaurants</button>
-          </div>
-        </form>
+    <div style="display:flex">
+      <div style="margin-top: 65px; float: left">
+        <h1>Stop waiting and start eating!</h1>
+        <h3 style="color: gray;">Fill in your details below to find restaurants near you</h3>
+        <div class="welcome-form">
+          <form class="welcome-form" action="list-of-restaurants.html" method="get">
+            <div>
+              <label for="city">City: </label>
+              <select id="city" name="city" required="true">
+                <option value=""></option>
+                <option value="ottawa">Ottawa</option>
+                <option value="montreal">Montreal</option>
+                <option value="toronto">Toronto</option>
+                <option value="waterloo">Waterloo</option>
+              </select>
+            </div>
+            <div>
+              <label for="food-type">I'm hungry for: </label>
+              <select id="food-type" name="food-type" required="true">
+                <option value=""></option>
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="dessert">Sweets</option>
+              </select>
+            </div>
+            <div>
+              <label for="restaurant-search">Restaurant search: </label>
+              <input id="restaurant-search" type="search" placeholder="Restaurant filter..." />
+            </div>
+            <div class="button">
+              <button type="submit">Find restaurants</button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
-    <div style="float:right">
-      <div class="welcome-hero">
-        <div class="welcome-hero-content">
-          <img src="assets/logo.png" height="20%" />
-          <p>The best food for the best prices</p>
+      <div style="padding-left: 30px">
+        <div class="welcome-hero">
+          <div class="welcome-hero-content">
+            <img src="assets/logo.png" height="20%" />
+          </div>
         </div>
       </div>
     </div>
