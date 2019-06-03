@@ -10,33 +10,37 @@
   <link rel="stylesheet" href="styles/topnav.css" />
 </head>
 <body>
-  <nav class="navbar navbar-light justify-content-end" style="background-color: white; border-bottom: 1px solid lightgray;">
-    <a class="navbar-brand" style="padding-right: 20px; border-right: 1px solid lightgray;" href="#">
-      <img class="logo" src="assets/logo.png" width="52px"/>Get Forked
+  <nav class="navbar sticky-top navbar-light justify-content-end navbar-collapse navbar-expand-md" style="background-color: white; border-bottom: 1px solid lightgray;">
+    <a class="navbar-brand" style="padding-right: 20px;" href="#">
+      <img class="logo" src="assets/logo.png" width="52px" style="margin-right: 30px"/>
+      Get <span style="color: #E91431">Forked</span>
     </a>
-    <form class="form-inline ml-auto">
-      <ul class="topnav-deliver-info-list">
-        <li>
-        <p style="text-align: center">Address</p>
-        <select class="form-control">
-          <option value="ottawa">Ottawa</option>
-          <option value="montreal">Montreal</option>
-          <option value="toronto">Toronto</option>
-          <option value="waterloo">Waterloo</option>
-        </select>
-      </li>
-      <li>
-        <p style="text-align: center">How</p>
-        <select class="form-control">
-          <option value="delivery">Delivery</option>
-          <option value="pickup">Pickup</option>
-        </select>
-      </li>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto" style="border-left: 1px solid lightgray; padding-left: 30px">
+        <li class="nav-item" style="padding-right: 30px">
+          <p style="text-align: center; color: #E91431">Address</p>
+          <select class="form-control">
+            <option value="ottawa">Ottawa</option>
+            <option value="montreal">Montreal</option>
+            <option value="toronto">Toronto</option>
+            <option value="waterloo">Waterloo</option>
+          </select>
+        </li>
+        <li class="nav-item">
+          <p style="text-align: center; color: #E91431">How</p>
+          <select class="form-control">
+            <option value="delivery">Delivery</option>
+            <option value="pickup">Pickup</option>
+          </select>
+        </li>
+        <li style="margin: auto 30px;">
+          <button type="button ml-auto" class="btn btn-primary" style="margin-right: auto">Log in</button>
+        </li>
       </ul>
-      </form>
-    <div class="m-4">
-      <button type="button" class="btn btn-primary" style="margin-right: 30px">Log in</button>
     </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </nav>
 </body>
 </html>
