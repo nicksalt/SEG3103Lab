@@ -9,46 +9,13 @@
     <link rel="stylesheet" href="./styles/menu.css">
 </head>
 <body>
-        <!-- TopNav -->
-    <div class="topnav">
-      <div class="topnav-logo-wrapper">
-        <img class="logo" src="assets/logo.png" width="52px"/>
-      </div>
-      <div class="topnav-company-name">
-        <span>Get Forked</span>
-      </div>
-      <div class="topnav-deliver-info">
-        <ul class="topnav-deliver-info-list">
-          <li>
-            <div class="topnav-deliver-info-list-item">
-              <h1>Address</h1>
-              <select>
-                <option value="ottawa">Ottawa</option>
-                <option value="montreal">Montreal</option>
-                <option value="toronto">Toronto</option>
-                <option value="waterloo">Waterloo</option>
-              </select>
-            </div>
-          </li>
-          <li>
-            <div class="topnav-deliver-info-list-item">
-              <h1>How</h1>
-              <select>
-                <option value="delivery">Delivery</option>
-                <option value="pickup">Pickup</option>
-              </select>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="topnav-login-wrapper">
-        <div class="topnav-login-content">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
-          <span><br /><button>Log in</button></span>
-        </div>
-      </div>
-    </div>
     <div class="container">
+<!-- TopNav -->
+  <div id="nav-placeholder">
+
+</div>
+<!-- End TopNav -->
+        <div class="content">
         <div class="menu">
             <div class="menu-types">
                 <div id="input_container">
@@ -143,4 +110,11 @@
             <button class="checkout">CHECKOUT</button>
         </div>
     </div>
+    </div>
 </body>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("topnav.html");
+});
+</script>
