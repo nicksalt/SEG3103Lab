@@ -75,6 +75,10 @@ nav{
     padding-left: 10px
 }
 
+#menu-categories > li:hover {
+    cursor: pointer;
+}
+
 .menu-item {
     width: 100%;
     padding: 30px 5px;
@@ -83,6 +87,7 @@ nav{
 }
 .menu-item:hover{
     background-color: #F2F4F5;
+    cursor: pointer;
 }
 .meal {
     display: inline-block;
