@@ -5,6 +5,11 @@ body {
 nav{
     margin-bottom: 20px;
 }
+.jumbotron{
+    background: url(../assets/180817_Manrepeller_Diner-1.jpg) center center;
+    color: white;
+    font-weight: bold;
+}
 .menu{
     
     margin: 0;
@@ -130,4 +135,17 @@ nav{
     text-align: end;
     padding-right: 0;
     margin-right: 0;
+}
+
+.rating-bg {
+    background: #E91431;
+    text-align: center;
+    width: 50px;
+    padding: 0px 0px 0px 0px;
+    border-radius: 10px
+}
+
+.rating-bg >h6 {
+    padding: 10px;
+    color: white
 }
