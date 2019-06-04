@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles/topnav.css" />
   <link rel="stylesheet" href="styles/shared-styles.css" />
   <link rel="stylesheet" href="styles/checkout.css" />
+  <script src="js/checkout.js"></script>
 </head>
 <body>
   <div style="background: url('assets/greek-dinner-in-restaurant.jpg')" class="container">
@@ -59,7 +60,7 @@
     </div>
     <div class="checkout-card">
       <h1>Payment details</h1>
-      <form id="checkout-details" class="checkout-details-form" action="checkout-details" method="POST">
+      <form id="checkout-details" class="checkout-details-form" action="javascript:void(0);" method="GET">
         <div>
           <label for="payment-method">Payment method: </label>
           <select id="payment-method" name="payment-method" required="true">
@@ -69,41 +70,9 @@
             <option value="cash-on-delivery">Cash on delivery</option>
           </select>
         </div>
-        <div>
-          <label for="card-number">Credit card #: </label>
-          <input id="card-number" type="text" required="true" />
-        </div>
-        <div>
-          <p>Expiry date</p>
-          <label for="expiry-month">Month: </label>
-          <select id="expiry-month" name="expiry-month" required="true">
-            <option value=""></option>
-            <option value="jan">January</option>
-            <option value="feb">February</option>
-            <option value="mar">March</option>
-            <option value="apr">April</option>
-            <option value="may">May</option>
-            <option value="jun">June</option>
-            <option value="jul">July</option>
-            <option value="aug">August</option>
-            <option value="sep">September</option>
-            <option value="oct">October</option>
-            <option value="nov">November</option>
-            <option value="dev">December</option>
-          </select>
-          <label for="expiry-year">Year: </label>
-          <select id="expiry-year" name="expiry-year" required="true">
-              <option value=""></option>
-              <option value="2019">2019</option>
-              <option value="2020">2020</option>
-              <option value="2021">2021</option>
-              <option value="2022">2022</option>
-              <option value="2023">2023</option>
-              <option value="2024">2024</option>
-              <option value="2025">2025</option>
-              <option value="2026">2026</option>
-          </select>
-        </div>
+        <span id="payment-details">
+          
+        </span>
       </form>
     </div>
     <div class="checkout-card">
@@ -127,13 +96,13 @@
         </div>
         <div>
           <label for="special-instructions">Special instructions: </label>
-          <textarea style="margin-top: 5px" form="checkout-details" type="textarea" placeholder="Enter any special instructions for the restaurant and/or delivery driver" rows="5" cols="60"></textarea>
+          <textarea style="margin-top: 5px" form="checkout-details" type="textarea" placeholder="Enter any special instructions for the restaurant and/or delivery driver" rows="5" cols="40"></textarea>
         </div>
       </div>
     </div>
     <div class="checkout-card">
       <div class="checkout-button">
-        <button type="submit" form="checkout-details">Place order</button>
+        <button type="submit" id="order-confirm" form="checkout-details">Place order</button>
       </div>
     </div>
   </div> <!-- End Container -->
